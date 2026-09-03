@@ -275,43 +275,56 @@
         }
 
 
-        /* ---------- RESEARCH ---------- */
+       /* ---------- RESEARCH ---------- */
 
-        .research-grid {
-            display: grid;
+.research-grid {
+    display: grid;
 
-            grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
-            gap: 25px;
-        }
+    gap: 25px;
+}
 
-        .research-card {
-            padding: 30px;
+.research-card {
+    padding: 30px;
 
-            border: 1px solid #e5e7eb;
+    border: 1px solid #e5e7eb;
 
-            border-radius: 8px;
+    border-radius: 8px;
 
-            background: white;
+    background: white;
 
-            transition: 0.2s;
-        }
+    transition: 0.2s;
+}
 
-        .research-card:hover {
-            border-color: #bfdbfe;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-        }
+.research-card:hover {
+    border-color: #bfdbfe;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
 
-        .research-card h3 {
-            color: #111827;
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
 
-        .research-card p {
-            color: #6b7280;
-            font-size: 15px;
-        }
+/* ---------- RESEARCH IMAGES ---------- */
+
+.research-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+
+.research-card h3 {
+    color: #111827;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.research-card p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
 
 
         /* ---------- EXPERIENCE PREVIEW ---------- */
@@ -694,91 +707,94 @@
 
     <!-- ================= RESEARCH ================= -->
 
-    <section id="research">
+<section id="research">
 
-        <div class="container">
+    <div class="container">
 
-            <h2 class="section-title">
-                Research Interests
-            </h2>
+        <h2 class="section-title">
+            Research Interests
+        </h2>
 
-            <p class="section-intro">
-                My research interests focus on hydraulic and
-                water-related hazards, with an emphasis on practical
-                approaches to understanding and managing flood and
-                dam-related risks.
-            </p>
-
-
-            <div class="research-grid">
+        <p class="section-intro">
+            My research focuses on dam safety, dam-breach assessment,
+            and hydraulic analysis. I am also exploring cost-effective
+            approaches to three-dimensional data acquisition and
+            point-cloud generation using 360-degree cameras.
+        </p>
 
 
-                <div class="research-card">
-
-                    <h3>
-                        Flood Mapping & Flood Risk
-                    </h3>
-
-                    <p>
-                        Investigating approaches for mapping flood
-                        hazards and understanding flood risk to support
-                        improved risk assessment and decision-making.
-                    </p>
-
-                </div>
+        <div class="research-grid">
 
 
-                <div class="research-card">
+            <!-- ================= DAM SAFETY ================= -->
 
-                    <h3>
-                        Dam Safety & Dam Breach
-                    </h3>
+            <div class="research-card">
 
-                    <p>
-                        Researching dam safety and dam-breach assessment,
-                        including approaches for understanding potential
-                        downstream impacts of dam failure.
-                    </p>
+                <img
+                    src="dam-safety.png"
+                    alt="Dam safety and dam-breach assessment"
+                    class="research-image"
+                >
 
-                </div>
+                <h3>
+                    Dam Safety & Dam-Breach Assessment
+                </h3>
 
+                <p>
+                    My current research interests center on dam safety
+                    and dam-breach assessment, with an emphasis on
+                    understanding potential dam failure scenarios,
+                    downstream consequences, and hydraulic processes
+                    associated with dam breaches.
+                </p>
 
-                <div class="research-card">
-
-                    <h3>
-                        Hydraulic Modelling
-                    </h3>
-
-                    <p>
-                        Applying hydraulic modelling to investigate
-                        flow behaviour and support analysis of
-                        water-related engineering problems.
-                    </p>
-
-                </div>
-
-
-                <div class="research-card">
-
-                    <h3>
-                        3D Point Clouds & 360° Cameras
-                    </h3>
-
-                    <p>
-                        Exploring cost-effective workflows for generating
-                        3D point clouds using 360-degree cameras, including
-                        potential applications in building documentation
-                        and surveying.
-                    </p>
-
-                </div>
-
+                <p>
+                    This research builds on my professional background
+                    in hydropower engineering and hydraulic design,
+                    providing a practical engineering perspective on
+                    dam safety and risk assessment.
+                </p>
 
             </div>
 
+
+            <!-- ================= POINT CLOUDS ================= -->
+
+            <div class="research-card">
+
+                <img
+                    src="point-cloud.png"
+                    alt="3D point cloud generated using a 360-degree camera"
+                    class="research-image"
+                >
+
+                <h3>
+                    3D Point Clouds & 360° Cameras
+                </h3>
+
+                <p>
+                    I am exploring cost-effective approaches for
+                    generating three-dimensional point clouds using
+                    360-degree cameras, including the GoPro MAX.
+                </p>
+
+                <p>
+                    The work investigates camera-based photogrammetry
+                    workflows for applications such as building
+                    documentation and surveying, with an emphasis
+                    on accessible alternatives to more expensive
+                    data-acquisition methods.
+                </p>
+
+            </div>
+
+
         </div>
 
-    </section>
+    </div>
+
+</section>
+
 
 
 
